@@ -12,6 +12,7 @@ GitHub Pages で公開する個人ホームページです（HTML / CSS / JS の
 | `research.html` | 研究テーマ |
 | `publications.html` | 業績（論文・発表） |
 | `cv.html` | 経歴・受賞・活動 |
+| `favicon.svg` / `favicon-32.png` / `apple-touch-icon.png` | タブなどに表示されるアイコン |
 | `style.css` | デザイン（全ページ共通） |
 | `script.js` | 日本語 / English 切替、メニュー、背景アニメーション |
 | `.nojekyll` | GitHub Pages の Jekyll 処理を無効化 |
