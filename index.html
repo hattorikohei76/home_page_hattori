@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kohei Hattori</title>
+  <meta name="description" content="服部航平（東京大学大学院 工学系研究科 物理工学専攻）のホームページ。物性理論、トポロジカル磁性、スピン・電荷結合輸送。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Kohei Hattori</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page"><span data-ja>ホーム</span><span data-en>Home</span></a></li>
+        <li><a href="news.html"><span data-ja>ニュース</span><span data-en>News</span></a></li>
+        <li><a href="research.html"><span data-ja>研究</span><span data-en>Research</span></a></li>
+        <li><a href="publications.html"><span data-ja>業績</span><span data-en>Publications</span></a></li>
+        <li><a href="cv.html"><span data-ja>経歴</span><span data-en>CV</span></a></li>
+      </ul>
+      <button class="lang-toggle" type="button" aria-label="Switch language / 言語切替">EN</button>
+      <button class="menu-toggle" type="button" aria-label="メニュー / Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== ヒーロー ===== -->
+    <section class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow">Condensed Matter Theory</p>
+        <h1 class="hero-name">
+          <span data-ja>服部 航平</span><span data-en>Kohei Hattori</span>
+        </h1>
+        <p class="hero-sub">
+          <span data-ja>Kohei Hattori</span>
+          <span data-en>服部 航平</span>
+        </p>
+        <p class="hero-affil">
+          <span data-ja>東京大学大学院 工学系研究科 物理工学専攻 <span class="nowrap">博士課程</span><br>日本学術振興会 特別研究員（DC2）</span>
+          <span data-en>Ph.D. Student, Department of Applied Physics, The University of Tokyo<br>JSPS Research Fellow (DC2)</span>
+        </p>
+        <ul class="hero-links">
+          <li><a class="btn btn-primary" href="https://scholar.google.co.jp/citations?user=EpXvcBsAAAAJ&amp;hl=ja" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a class="btn" href="https://orcid.org/0009-0005-0678-113X" target="_blank" rel="noopener">ORCID</a></li>
+          <li><a class="btn" href="#contact">Email</a></li>
+          <li><a class="btn" href="https://arita-lab.phys.s.u-tokyo.ac.jp/" target="_blank" rel="noopener"><span data-ja>研究室</span><span data-en>Group</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 自己紹介 ===== -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title"><span data-ja>自己紹介</span><span data-en>About</span></h2>
+      <div class="prose">
+        <p data-ja>東京大学大学院 工学系研究科 物理工学専攻の博士課程に在籍し、有田研究室で物性理論の研究をしています（日本学術振興会 特別研究員 DC2）。磁性体中のスピンダイナミクスと伝導電子の結合に興味があり、トポロジカルな磁気構造や反強磁性トポロジカル半金属における電子輸送・非線形応答・光電流を、理論と実時間シミュレーションの両面から調べています。</p>
+        <p data-en>
+          I am a Ph.D. student in the Department of Applied Physics at the University of Tokyo and a JSPS Research Fellow (DC2), working on condensed matter theory in the Arita Group.
+          I am interested in how spin dynamics in magnets couples to conduction electrons, and I study electronic transport, nonlinear responses,
+          and photocurrents in topological spin textures and antiferromagnetic topological semimetals, combining analytical theory with real-time simulations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ニュース（最新 3 件、news-data.js から表示） ===== -->
+    <section class="section reveal">
+      <h2 class="section-title"><span data-ja>ニュース</span><span data-en>News</span></h2>
+      <ol class="news-list" data-news data-limit="3"></ol>
+      <p class="more"><a href="news.html"><span data-ja>すべてのニュースを見る</span><span data-en>All news</span> →</a></p>
+    </section>
+
+    <!-- ===== 各ページへの案内 ===== -->
+    <section class="section reveal">
+      <h2 class="section-title"><span data-ja>コンテンツ</span><span data-en>Explore</span></h2>
+      <div class="explore">
+        <a class="explore-card" href="news.html">
+          <span class="explore-en">News</span>
+          <span class="explore-title"><span data-ja>ニュース</span><span data-en>News</span></span>
+          <span class="explore-desc"><span data-ja>最新のお知らせ</span><span data-en>Latest updates</span></span>
+          <span class="explore-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="explore-card" href="research.html">
+          <span class="explore-en">Research</span>
+          <span class="explore-title"><span data-ja>研究</span><span data-en>Research</span></span>
+          <span class="explore-desc"><span data-ja>トポロジカル磁性、非線形輸送、反強磁性トポロジカル半金属などの研究テーマ</span><span data-en>Topological magnetism, nonlinear transport, antiferromagnetic topological semimetals, and more</span></span>
+          <span class="explore-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="explore-card" href="publications.html">
+          <span class="explore-en">Publications</span>
+          <span class="explore-title"><span data-ja>業績</span><span data-en>Publications</span></span>
+          <span class="explore-desc"><span data-ja>論文、学会発表・セミナー、競争的資金</span><span data-en>Papers, presentations, seminars, and grants</span></span>
+          <span class="explore-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="explore-card" href="cv.html">
+          <span class="explore-en">CV</span>
+          <span class="explore-title"><span data-ja>経歴</span><span data-en>CV</span></span>
+          <span class="explore-desc"><span data-ja>学歴・職歴、受賞、活動</span><span data-en>Education, positions, awards, and service</span></span>
+          <span class="explore-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== 連絡先 ===== -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title"><span data-ja>連絡先</span><span data-en>Contact</span></h2>
+      <div class="contact">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span><span class="email-text">hattori-kohei053_at_g.ecc.u-tokyo.ac.jp</span> <span class="email-note"><span data-ja>（_at_ を @ に変えてください）</span><span data-en>(replace _at_ with @)</span></span></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">ORCID</span>
+          <a href="https://orcid.org/0009-0005-0678-113X" target="_blank" rel="noopener">0009-0005-0678-113X</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label"><span data-ja>所属</span><span data-en>Affiliation</span></span>
+          <span><span data-ja>東京大学大学院 工学系研究科 物理工学専攻 有田研究室</span><span data-en>Arita Group, Department of Applied Physics, The University of Tokyo</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== アクセス ===== -->
+    <section id="access" class="section reveal">
+      <h2 class="section-title"><span data-ja>アクセス</span><span data-en>Access</span></h2>
+      <div class="access">
+        <div class="access-main">
+          <div class="access-info">
+            <p class="access-label"><span data-ja>東京大学 本郷キャンパス</span><span data-en>The University of Tokyo, Hongo Campus</span></p>
+            <h3 class="access-place"><span data-ja>理学部1号館 939号室（有田研究室）</span><span data-en>Faculty of Science Bldg. 1, Room 939 (Arita Group)</span></h3>
+            <p class="access-addr"><span data-ja>〒113-0033 東京都文京区本郷7-3-1</span><span data-en>7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan</span></p>
+            <ul class="access-stations">
+              <li><span data-ja>本郷三丁目駅（都営大江戸線）</span><span data-en>Hongo-sanchome Sta. (Toei Oedo Line)</span><span class="walk"><span data-ja>徒歩約6分</span><span data-en>6 min walk</span></span></li>
+              <li><span data-ja>本郷三丁目駅（東京メトロ丸ノ内線）</span><span data-en>Hongo-sanchome Sta. (Tokyo Metro Marunouchi Line)</span><span class="walk"><span data-ja>徒歩約8分</span><span data-en>8 min walk</span></span></li>
+              <li><span data-ja>湯島駅・根津駅（東京メトロ千代田線）</span><span data-en>Yushima / Nezu Sta. (Tokyo Metro Chiyoda Line)</span><span class="walk"><span data-ja>徒歩約8分</span><span data-en>8 min walk</span></span></li>
+              <li><span data-ja>東大前駅（東京メトロ南北線）</span><span data-en>Todaimae Sta. (Tokyo Metro Namboku Line)</span><span class="walk"><span data-ja>徒歩約10分</span><span data-en>10 min walk</span></span></li>
+              <li><span data-ja>春日駅（都営三田線）</span><span data-en>Kasuga Sta. (Toei Mita Line)</span><span class="walk"><span data-ja>徒歩約10分</span><span data-en>10 min walk</span></span></li>
+            </ul>
+            <p class="access-links">
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%90%86%E5%AD%A6%E9%83%A81%E5%8F%B7%E9%A4%A8" target="_blank" rel="noopener"><span data-ja>Google マップで開く</span><span data-en>Open in Google Maps</span> →</a>
+              <a href="https://arita-lab.phys.s.u-tokyo.ac.jp/access.html" target="_blank" rel="noopener"><span data-ja>研究室のアクセスページ</span><span data-en>Group access page</span> →</a>
+            </p>
+          </div>
+          <div class="access-map">
+            <iframe title="東京大学理学部1号館の地図" src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%90%86%E5%AD%A6%E9%83%A81%E5%8F%B7%E9%A4%A8&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Kohei Hattori</p>
+  </footer>
+
+  <script src="news-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

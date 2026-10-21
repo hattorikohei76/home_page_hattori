@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Kohei Hattori</title>
+  <meta name="description" content="服部航平の研究テーマ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Kohei Hattori</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><span data-ja>ホーム</span><span data-en>Home</span></a></li>
+        <li><a href="news.html"><span data-ja>ニュース</span><span data-en>News</span></a></li>
+        <li><a href="research.html" aria-current="page"><span data-ja>研究</span><span data-en>Research</span></a></li>
+        <li><a href="publications.html"><span data-ja>業績</span><span data-en>Publications</span></a></li>
+        <li><a href="cv.html"><span data-ja>経歴</span><span data-en>CV</span></a></li>
+      </ul>
+      <button class="lang-toggle" type="button" aria-label="Switch language / 言語切替">EN</button>
+      <button class="menu-toggle" type="button" aria-label="メニュー / Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="page-head-inner">
+        <p class="eyebrow">Research</p>
+        <h1 class="page-title"><span data-ja>研究</span><span data-en>Research</span></h1>
+        <p class="page-lead"><span data-ja>スピンダイナミクスと伝導電子の結合が生み出す現象を、理論と数値計算で調べています。</span><span data-en>Phenomena arising from the coupling between spin dynamics and conduction electrons, studied with theory and simulation.</span></p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+
+      <div class="projects">
+        <details class="project" id="project-1">
+          <summary class="project-summary">
+            <svg class="card-icon project-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 7v6M24 35v6M7 24h6M35 24h6M12 12l4 4M32 32l4 4M36 12l-4 4M16 32l-4 4"/><circle cx="24" cy="24" r="3" class="fill"/></svg>
+            <div class="project-head">
+              <span class="project-num">Project 01</span>
+              <h3 class="project-title"><span data-ja>トポロジカル磁気構造と電子輸送</span><span data-en>Topological spin textures and electronic transport</span></h3>
+              <div class="kws"><span class="kw"><span data-ja>近藤格子模型</span><span data-en>Kondo lattice model</span></span><span class="kw"><span data-ja>実時間シミュレーション</span><span data-en>Real-time simulation</span></span><span class="kw"><span data-ja>all-in/all-out 構造</span><span data-en>All-in/all-out order</span></span><span class="kw"><span data-ja>集団励起</span><span data-en>Collective excitations</span></span><span class="kw"><span data-ja>光学伝導度</span><span data-en>Optical conductivity</span></span></div>
+            </div>
+            <span class="project-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p data-ja>磁性体の中には、スキルミオンや all-in/all-out 構造のように、スピンが空間的に複雑に並んだトポロジカルな磁気構造が現れます。こうした系では、局在スピンの集団励起と伝導電子が強く結びつき、電子の輸送や光学応答に影響を与えると考えられます。</p>
+            <p data-en>Some magnets host topological spin textures, such as skyrmions and the all-in/all-out structure, in which spins are arranged in complex spatial patterns. In such systems, collective excitations of the localized spins couple strongly to conduction electrons and can affect electronic transport and optical responses.</p>
+            <p data-ja>本研究では、スピン・電荷結合系を速度ゲージで扱う効率的な実時間シミュレーション手法を開発し、複雑な磁気構造をもつ二次元系の計算を可能にしました。all-in/all-out 構造をとる三角格子上の近藤格子模型で線形光学伝導度を計算したところ、バンドギャップより低いエネルギー領域に、スキルミオン系と同様の集団モードの共鳴による複数のピークと、非共鳴なスピンダイナミクスによる広帯域の変化が現れることを見出しました。さらに、異なるスピン励起の寄与どうしの干渉を明らかにし、モードごとに電気的な活性が異なることを示しました。</p>
+            <p data-en>We developed an efficient real-time simulation method for spin–charge coupled systems in the velocity gauge, enabling calculations for two-dimensional systems with complex spin textures. Computing the linear optical conductivity of the Kondo lattice model on the triangular lattice with all-in/all-out order, we found multiple peaks below the band gap arising from resonant collective modes, similar to skyrmionic systems, together with broadband modifications from off-resonant spin dynamics. We also clarified the interference between contributions from different spin excitations, revealing mode-dependent electrical activity.</p>
+            <h4 class="project-sub"><span data-ja>関連する論文・発表</span><span data-en>Related papers &amp; talks</span></h4>
+            <ul class="project-refs">
+              <li><a href="https://doi.org/10.1103/PhysRevB.110.014425" target="_blank" rel="noopener"><b>K. Hattori</b> <i>et al.</i>, Phys. Rev. B <b>110</b>, 014425 (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2404.05204" target="_blank" rel="noopener">arXiv:2404.05204</a></li>
+              <li><span data-ja>APS Global Physics Summit 2025（口頭） / 日本物理学会 第79回年次大会（口頭）</span><span data-en>APS Global Physics Summit 2025 (oral) / 79th JPS Annual Meeting (oral)</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="project" id="project-2">
+          <summary class="project-summary">
+            <svg class="card-icon project-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 38c8 0 10-28 18-28s10 28 18 28"/><path d="M6 24h36" class="thin"/><path d="M34 14l6-4-1 7"/></svg>
+            <div class="project-head">
+              <span class="project-num">Project 02</span>
+              <h3 class="project-title"><span data-ja>スピン起電力と非線形ホール効果</span><span data-en>Spin–charge-coupled motive force and the nonlinear Hall effect</span></h3>
+              <div class="kws"><span class="kw"><span data-ja>PT 対称磁性体</span><span data-en>PT-symmetric magnets</span></span><span class="kw"><span data-ja>非線形ホール効果</span><span data-en>Nonlinear Hall effect</span></span><span class="kw"><span data-ja>スピンダイナミクス</span><span data-en>Spin dynamics</span></span><span class="kw"><span data-ja>混合双極子</span><span data-en>Mixed dipole</span></span></div>
+            </div>
+            <span class="project-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p data-ja>空間反転と時間反転を組み合わせた PT 対称性をもつ磁性体は、空間反転対称性の破れによってスピンと電荷が結合したダイナミクスが豊かになることから、大きな注目を集めています。</p>
+            <p data-en>Parity–time-reversal (PT) symmetric magnets have attracted much attention because broken inversion symmetry enriches their spin–charge coupled dynamics.</p>
+            <p data-ja>本研究では、実時間シミュレーションを用いて、局在スピンのダイナミクスが PT 対称磁性体の非線形ホール効果にどう影響するかを調べました。二次の光学応答の解析的な表式を導き、PT 対称性のもとでの変換性に基づいて寄与を分類することで、主要な項を特定しました。その結果、ベリー曲率双極子項に類似した「混合双極子効果」が大きな寄与を与えることを明らかにしました。</p>
+            <p data-en>Using real-time simulations, we studied how localized spin dynamics affects the nonlinear Hall effect in PT-symmetric magnets. By deriving analytical expressions for the second-order optical response and classifying the contributions by their transformation properties under PT symmetry, we identified the leading-order term and showed that a sizable contribution comes from the mixed dipole effect, analogous to the Berry curvature dipole term.</p>
+            <h4 class="project-sub"><span data-ja>関連する論文・発表</span><span data-en>Related papers &amp; talks</span></h4>
+            <ul class="project-refs">
+              <li><a href="https://doi.org/10.1103/PhysRevB.111.174416" target="_blank" rel="noopener"><b>K. Hattori</b>, H. Watanabe, and R. Arita, Phys. Rev. B <b>111</b>, 174416 (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2501.11234" target="_blank" rel="noopener">arXiv:2501.11234</a></li>
+              <li><span data-ja>SCES 2025, Montréal（口頭）</span><span data-en>SCES 2025, Montréal (oral)</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="project" id="project-3">
+          <summary class="project-summary">
+            <svg class="card-icon project-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8l32 32M40 8L8 40"/><circle cx="24" cy="24" r="4" class="fill"/><path d="M14 6v6M34 42v-6" class="thin"/></svg>
+            <div class="project-head">
+              <span class="project-num">Project 03</span>
+              <h3 class="project-title"><span data-ja>反強磁性トポロジカル半金属のディラック電荷</span><span data-en>Dirac charge in antiferromagnetic topological semimetals</span></h3>
+              <div class="kws"><span class="kw"><span data-ja>反強磁性ディラック半金属</span><span data-en>Antiferromagnetic Dirac semimetals</span></span><span class="kw"><span data-ja>ベリー曲率</span><span data-en>Berry curvature</span></span><span class="kw"><span data-ja>一般化パラメータ空間</span><span data-en>Generalized parameter space</span></span><span class="kw"><span data-ja>光電流</span><span data-en>Photocurrent</span></span></div>
+            </div>
+            <span class="project-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p data-ja>ワイル半金属のワイル点がベリー曲率のモノポールとなるように、電子バンドのトポロジカルな節点は創発的な「電荷」の自由度をもつことがあり、特異な輸送現象や光学現象をもたらします。</p>
+            <p data-en>Topological nodes of electronic bands can carry emergent charge degrees of freedom — such as the Berry curvature monopoles of Weyl semimetals — leading to intriguing transport and optical phenomena.</p>
+            <p data-ja>本研究では、反強磁性ディラック半金属に隠れた「ディラック電荷」の存在と、その光電流による検出を議論しました。スピンおよびスピン・電荷の混合パラメータ空間で定義したベリー曲率に着目し、ディラック電荷を一般化パラメータ空間におけるベリー曲率の湧き出し・吸い込みとして同定しました。さらに、ディラック電荷がスピン・電荷結合起電力によって駆動される光電流を通じて検出できることを示し、実時間シミュレーションにより、ディラック電荷が光電流の生成に重要な役割を果たすことを見出しました。</p>
+            <p data-en>In this work, we discussed the existence of a hidden “Dirac charge” in antiferromagnetic Dirac semimetals and its detection via photocurrents. Using the Berry curvature defined in the spin and spin–charge mixed parameter spaces, we identified Dirac charges as sources or sinks of Berry curvature in the generalized parameter space. We showed that the Dirac charge can be detected through photocurrents driven by the spin–charge-coupled motive force, and real-time simulations revealed that it plays a significant role in photocurrent generation.</p>
+            <h4 class="project-sub"><span data-ja>関連する論文・発表</span><span data-en>Related papers &amp; talks</span></h4>
+            <ul class="project-refs">
+              <li><a href="https://doi.org/10.1103/sfc4-8wph" target="_blank" rel="noopener"><b>K. Hattori</b>, H. Watanabe, and R. Arita, Phys. Rev. Lett. <b>136</b>, 046603 (2026)</a></li>
+              <li><a href="https://arxiv.org/abs/2505.03191" target="_blank" rel="noopener">arXiv:2505.03191</a></li>
+              <li><span data-ja>招待講演（2026年10月） / APS Global Physics Summit 2026・SCES 2026（口頭） / 日本物理学会 学生優秀発表賞</span><span data-en>Invited talk (Oct 2026) / APS Global Physics Summit 2026 and SCES 2026 (oral) / JPS Student Presentation Award</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="project" id="project-4">
+          <summary class="project-summary">
+            <svg class="card-icon project-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c10 6 10 14 0 20s-10 14 0 20"/><path d="M24 4c-10 6-10 14 0 20s10 14 0 20" class="thin"/><path d="M14 14h20M14 34h20" class="thin"/></svg>
+            <div class="project-head">
+              <span class="project-num">Project 04</span>
+              <h3 class="project-title"><span data-ja>キラル系の反平行スピン偏極</span><span data-en>Antiparallel spin polarization in chiral systems</span></h3>
+              <div class="kws"><span class="kw"><span data-ja>キラリティ</span><span data-en>Chirality</span></span><span class="kw"><span data-ja>反平行スピン偏極</span><span data-en>Antiparallel spin polarization</span></span><span class="kw"><span data-ja>非線形応答</span><span data-en>Nonlinear response</span></span><span class="kw"><span data-ja>非線形久保公式</span><span data-en>Nonlinear Kubo formula</span></span></div>
+            </div>
+            <span class="project-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p data-ja>キラリティ（掌性）に依存したスピンの生成は、物性物理学で大きな注目を集めています。</p>
+            <p data-en>Chirality-dependent spin generation has attracted considerable attention in condensed matter physics.</p>
+            <p data-ja>本研究では、三角柱からなる有限サイズのキラル系を用いて、キラリティに依存した二次の応答としての反平行スピン偏極を理論的に調べました。非線形久保公式と実時間シミュレーションに基づき、一様な交流電場に対する散逸的な二次の直流応答として、空間的に非一様な反平行スピン偏極が誘起されることを示しました。特に、キラリティの掌性を特徴づける微視的パラメータの役割を明らかにし、スピン偏極をスピン流によるスピン蓄積の結果とみなす素朴な描像についても検討しました。</p>
+            <p data-en>Using a finite chiral system composed of triangular prisms, we theoretically investigated antiparallel spin polarization as a chirality-dependent quadratic response. Based on the nonlinear Kubo formalism and real-time simulations, we showed that spatially inhomogeneous antiparallel spin polarizations are induced as a dissipative quadratic DC response to a homogeneous AC electric field. We also clarified the role of the microscopic parameters characterizing the handedness, and examined the naive picture of spin polarization as spin accumulation due to spin currents.</p>
+            <h4 class="project-sub"><span data-ja>関連する論文・発表</span><span data-en>Related papers &amp; talks</span></h4>
+            <ul class="project-refs">
+              <li><a href="https://arxiv.org/abs/2602.21718" target="_blank" rel="noopener">A. Inda, <b>K. Hattori</b>, H. Kusunose, and S. Hayami, arXiv:2602.21718 (2026)</a></li>
+              <li><span data-ja>日本物理学会 第80回年次大会（口頭、印田氏発表）</span><span data-en>80th JPS Annual Meeting (oral, presented by A. Inda)</span></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Kohei Hattori</p>
+  </footer>
+
+  <script src="news-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

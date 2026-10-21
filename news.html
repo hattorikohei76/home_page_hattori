@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News — Kohei Hattori</title>
+  <meta name="description" content="服部航平のニュース">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Kohei Hattori</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><span data-ja>ホーム</span><span data-en>Home</span></a></li>
+        <li><a href="news.html" aria-current="page"><span data-ja>ニュース</span><span data-en>News</span></a></li>
+        <li><a href="research.html"><span data-ja>研究</span><span data-en>Research</span></a></li>
+        <li><a href="publications.html"><span data-ja>業績</span><span data-en>Publications</span></a></li>
+        <li><a href="cv.html"><span data-ja>経歴</span><span data-en>CV</span></a></li>
+      </ul>
+      <button class="lang-toggle" type="button" aria-label="Switch language / 言語切替">EN</button>
+      <button class="menu-toggle" type="button" aria-label="メニュー / Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="page-head-inner">
+        <p class="eyebrow">News</p>
+        <h1 class="page-title"><span data-ja>ニュース</span><span data-en>News</span></h1>
+        <p class="page-lead"><span data-ja>最新のお知らせ</span><span data-en>Latest updates</span></p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div data-news-years></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Kohei Hattori</p>
+  </footer>
+
+  <script src="news-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
