@@ -1049,3 +1049,29 @@ details.project[open] .project-chevron { transform: rotate(225deg); margin-top: 
 }
 .talk-year .count { font-size: .7rem; }
 .talk-year .pres { padding-bottom: 8px; }
+
+/* ===== 研究ページ：論文の Fig. 1 ===== */
+.project-fig { margin: 0 0 26px; }
+.project-fig a { display: inline-block; max-width: 100%; }
+.project-fig img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 760px);
+  height: auto;
+  max-height: 460px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: zoom-in;
+}
+.project-fig-tall img { max-height: 560px; }
+.project-fig figcaption {
+  margin-top: 10px;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.75;
+}
+.fig-cite { display: block; margin-top: 4px; color: var(--faint); font-size: .78rem; }
+.fig-cite a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
